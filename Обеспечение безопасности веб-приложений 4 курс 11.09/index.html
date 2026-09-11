@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="container header-inner">
+        <h1>Каталог диванов</h1>
+        <button class="cart-button" id="open-cart">
+            Корзина
+            <span id="cart-count">0</span>
+        </button>
+    </div>
+</header>
+
+<main class="container">
+    <section class="products" id="products"></section>
+</main>
+
+<div class="modal" id="cart-modal">
+    <div class="modal-content">
+        <button class="modal-close" id="close-cart">×</button>
+        <h2>Корзина</h2>
+        <div id="cart-list"></div>
+        <div class="cart-bottom">
+            <p>
+                Итого:
+                <strong>
+                    <span id="cart-total">0</span> ₽
+                </strong>
+            </p>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
